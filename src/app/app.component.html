@@ -1,4 +1,4 @@
-<div class=" bg-gray-100">
+<div class=" bg-gray-100 ">
   <section>
     <div class="flex flex-row flex-wrap min-h-screen ">
       <div class="bg-gray-900 hidden xl:block lg:block float-left w-1/5  " id="mobile-menu" *ngIf="mobileMenu">
@@ -235,7 +235,7 @@
             </aside>
         </div>
       </div>
-      <div class=" w-full sm:w-screen  lg:w-4/5  ">
+      <div class=" w-full md:w-screen sm:w-screen overflow-hidden lg:w-4/5  ">
         <div id="bar" class="flex items-center shadow-sm bg-white py-2 sm:flow-root md:flow-root lg:flow-root flow-root overflow-hidden">
           <div class="sm:float-left lg:float-left float-left md:float-left flex">
             <button (click)="mobileMenu = !mobileMenu">
@@ -292,8 +292,8 @@
             </div>
           </div>
         </div>
-        <article class="lg:p-7 sm:p-5 p-1 py-5  min-h-screen max-w-screen  ">
-          <div class="content border-gray-200 bg-white rounded-md   shadow-sm dark:bg-gray-800 dark:border-gray-700 p-0 sm:p-3 lg:p-3 max-w-full">
+        <article class="lg:p-7 sm:p-5 p-5   min-h-screen   ">
+          <div class="content border-gray-200 bg-white rounded-md  relative shadow-sm dark:bg-gray-800 dark:border-gray-700 p-3 sm:p-3 lg:p-3  w-full">
             <router-outlet></router-outlet>
           </div>
         </article>
@@ -301,3 +301,4 @@
     </div>
   </section>
 </div>
+
