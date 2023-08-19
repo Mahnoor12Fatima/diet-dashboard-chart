@@ -11,6 +11,7 @@ export class TodayComponent implements OnInit {
   
   constructor(private dataService:ServiceService) { }
   todayList:any;
+  colors = ['#00308F','#71797E','#088F8F', '#B4C424', '#FFD700','#8b8589','#FFC000','#6CB4EE','#009E60','#811331'];
   originalList:any;
   ngOnInit(): void {
     this.getTodayList()

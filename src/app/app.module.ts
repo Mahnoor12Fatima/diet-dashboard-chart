@@ -8,13 +8,15 @@ import { TodayComponent } from './today/today.component';
 import { ChartComponent } from './chart/chart.component';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { FoodListPipe } from './pipes/initial.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FoodListComponent,
     TodayComponent,
-    ChartComponent
+    ChartComponent,
+    FoodListPipe
   ],
   imports: [
     BrowserModule,
